@@ -173,10 +173,7 @@ plt.title('Movie Title Word Cloud', fontsize=30)
 plt.show()
 
 
-
 # compare the duration of the movie among years # see the duration trend 
-
-# percentage of the movie/ TV show in neflix
 
 # Country vs prodution movie type 
 
