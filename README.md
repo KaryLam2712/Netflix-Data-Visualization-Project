@@ -133,6 +133,34 @@ plt.title('Movie Title Word Cloud', fontsize=30)
 plt.show()
 ```
 
+```
+python_mask1 = np.array(Image.open('/Users/karylam/Desktop/netflix/cloud.jpg'))
+
+years = [2021, 2016, 2011]
+
+for year in years:
+  movie_genres_years = ' '.join(netflix[(netflix['type'] == 'Movie') & (netflix['release_year'] == year)]['listed_in'].explode().dropna())
+  movie_genres_years_wordcloud = WordCloud(width=1200, 
+                                        height=1200,
+                                        background_color='white',
+                                        normalize_plurals = True,
+                                        repeat = True, 
+                                        stopwords=STOPWORDS,
+                                        mask=python_mask1,
+                                        min_font_size = 10,
+                                        colormap='Dark2_r').generate(movie_genres_years)
+  
+  text1 = list(set(movie_genres_years))
+  plt.figure(figsize=(10, 8))
+  plt.imshow(movie_genres_years_wordcloud, interpolation='bilinear')
+  plt.axis('off')
+  plt.title(f'Movie Genre Word Cloud {year}', fontsize=30)
+  plt.show()
+
+for year1 in years: 
+  movie_in_years = len(netflix[(netflix['type'] == 'Movie') & (netflix['release_year'] == year)]['listed_in'])
+  print(movie_in_years) 
+```
 ![alt text](Figure_9.png)
 
 ## Features

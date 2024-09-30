@@ -99,7 +99,7 @@ plt.show()
 
 # Genre Analysis - Word Cloud
 # Over years
-python_mask = np.array(Image.open('/Users/karylam/Desktop/netflix/1000_F_311928582_JlynEjE0p4A7eOOsge79My3wkFvk0H2A.jpg'))
+python_mask = np.array(Image.open('/Users/karylam/Desktop/netflix/Figures/circle.jpg'))
 movie_genres = ' '.join(netflix[netflix['type'] == 'Movie']['listed_in'].explode().dropna())
 movie_wordcloud = WordCloud(width=1200,
                             height=1200,
@@ -122,7 +122,7 @@ plt.show()
 
 
 # Genre Analysis - Word Cloud(2021 , 2016, 2011 years)
-python_mask1 = np.array(Image.open('/Users/karylam/Desktop/netflix/golden-star-icon-free-vector.jpg'))
+python_mask1 = np.array(Image.open('/Users/karylam/Desktop/netflix/Figures/cloud.jpg'))
 
 years = [2021, 2016, 2011]
 
@@ -136,7 +136,7 @@ for year in years:
                                         stopwords=STOPWORDS,
                                         mask=python_mask1,
                                         min_font_size = 10,
-                                        colormap='viridis').generate(movie_genres_years)
+                                        colormap='Dark2_r').generate(movie_genres_years)
   
   text1 = list(set(movie_genres_years))
   plt.figure(figsize=(10, 8))
@@ -172,8 +172,8 @@ plt.axis('off')
 plt.title('Movie Title Word Cloud', fontsize=30)
 plt.show()
 
-
 # compare the duration of the movie among years # see the duration trend 
+
 
 # Country vs prodution movie type 
 
