@@ -34,7 +34,8 @@ plt.title('Distribution of Movies and TV Shows', fontsize=20)
 plt.show()
 ```
 
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/54ecd697-2490-4c12-b973-05bd38eba1d2)
+
 
 - Top Directors - Meet the Leading Filmmakers on Netflix
 
@@ -58,9 +59,11 @@ plt.title('Top TV show Directors on Netflix', fontsize = 20, color='#b20710',fon
 plt.show()
 ```
 
-![alt text](Figure_2.png)
+![image](https://github.com/user-attachments/assets/25f890e7-4234-468d-9437-56340f90d978)
 
-![alt text](Figure_3.png)
+
+![image](https://github.com/user-attachments/assets/61f089f1-41ce-4d48-adca-9a1a692d0ef4)
+
 
 - Country Breakdown - Exploring Netflix's Content Origins
 
@@ -81,7 +84,8 @@ plt.title('Countries Producing the Most Content on Netflix',fontsize = 20,fontwe
 plt.show()
 ```
 
-![alt text](Figure_4.png)
+![image](https://github.com/user-attachments/assets/6dfb9bf7-2d41-4034-97a9-abc8840f16d9)
+
 
 - Genre Variety - Delving into Netflix's Different Show Types
 
@@ -100,13 +104,17 @@ movie_wordcloud = WordCloud(width=1200,
 
 ```
 
-![alt text](Figure_5.png)
+![image](https://github.com/user-attachments/assets/b6dcddef-fecd-4e3e-b2d8-d46329acd14b)
 
-![alt text](Figure_6.png)
 
-![alt text](Figure_7.png)
+![image](https://github.com/user-attachments/assets/b399b3b9-493d-4543-a590-cd1fb70a400b)
 
-![alt text](Figure_8.png)
+
+![image](https://github.com/user-attachments/assets/baa49a44-691c-4859-924e-fae980535397)
+
+
+![image](https://github.com/user-attachments/assets/2e760032-f11c-4c88-8985-71f993faa46d)
+
 
 - Favorite Titles - Uncovering Popular Movie Picks
 
@@ -161,6 +169,7 @@ for year1 in years:
   movie_in_years = len(netflix[(netflix['type'] == 'Movie') & (netflix['release_year'] == year)]['listed_in'])
   print(movie_in_years) 
 ```
-![alt text](Figure_9.png)
+![image](https://github.com/user-attachments/assets/6d38b4ac-b37b-4cd7-bc16-1a2348b5717c)
+
 
 ## Features
